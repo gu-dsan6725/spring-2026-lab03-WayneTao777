@@ -1,7 +1,7 @@
-# California Housing ML Project
+# Wine Classification ML Project
 
 ## Project Overview
-This project performs exploratory data analysis and builds an XGBoost regression model on the California Housing dataset from scikit-learn. The goal is to predict median house values.
+This project performs exploratory data analysis and builds an XGBoost classification model on the UCI Wine dataset from scikit-learn. The goal is to classify wines into 3 classes.
 
 ## Coding Standards
 
@@ -11,6 +11,10 @@ This project performs exploratory data analysis and builds an XGBoost regression
 - Use `polars` for data manipulation (not pandas)
 - Use `ruff` for linting and formatting
 - Use `pytest` for testing
+### Dataset-Specific Requirements
+- Use `sklearn.datasets.load_wine()` as the data source
+- The target has 3 classes (0, 1, 2). Use stratified splits when splitting data
+- Report classification metrics: accuracy, precision, recall, F1-score, confusion matrix
 
 ### Code Style
 - Use type annotations for all function parameters (one parameter per line)

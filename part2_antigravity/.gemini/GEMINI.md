@@ -1,7 +1,8 @@
-# ML Project - Antigravity Rules
+# Wine Classification Project - Antigravity Rules
 
 ## Project Overview
-This project performs exploratory data analysis and builds an XGBoost model using scikit-learn datasets.
+This project performs exploratory data analysis and builds an XGBoost classifier on the UCI Wine dataset.
+The goal is to classify wines into 3 classes.
 
 ## Coding Standards
 
@@ -11,6 +12,10 @@ This project performs exploratory data analysis and builds an XGBoost model usin
 - Use `polars` for data manipulation (not pandas)
 - Use `ruff` for linting and formatting
 - Use `pytest` for testing
+### Dataset-Specific Requirements
+- Use `sklearn.datasets.load_wine()` as the data source
+- The target has 3 classes. Use stratified splits
+- Report accuracy, precision, recall, F1-score, and confusion matrix
 
 ### Code Style
 - Use type annotations for all function parameters (one parameter per line)
